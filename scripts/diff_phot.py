@@ -13,12 +13,12 @@ def run_diff_phot():
     """Function to perform difference photometry for selected stars within
     a given dataset"""
     #Fixed input mode for debug
-    params = {}
-    params['input_dir'] = "/mnt/c/Users/tellis/Documents/Data/lcodata"
-    params['output_dir'] = "/mnt/c/Users/tellis/Documents/Data/output"
-    params['star_file'] = "/mnt/c/Users/tellis/Documents/Projects/targets.txt"
+#    params = {}
+#    params['input_dir'] = "/mnt/c/Users/tellis/Documents/Data/lcodata"
+#    params['output_dir'] = "/mnt/c/Users/tellis/Documents/Data/output"
+#    params['star_file'] = "/mnt/c/Users/tellis/Documents/Projects/targets.txt"
 
-#    params = get_params()
+    params = get_params()
     check_sanity(params)
 
     phot_data = dataset.DataSet(params=params)
